@@ -5,8 +5,143 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <header>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index/logo.svg" width="154" height="62" alt="Логотип магазина мороженого Gllacy Shop">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Каталог</a>
+            <ul>
+              <li><a href="news.html">Новинки</a>
+                <ul>
+                  <li><a href="cream.html">Сливочное</a></li>
+                  <li><a href="sherbet.html">Щербеты</a></li>
+                  <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+                  <li><a href="mellorine.html">Мелорин</a></li>
+                </ul>
+              </li>
+            </ul>
+            </li>
+          <li><a href="price.html">Доставка и оплата</a></li>
+          <li><a href="about-company.html">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="visually-hidden">Поиск</li>
+          <li class="login">Вход</li>
+          <li class="basket">Пусто</li>
+        </ul>
+        <ul class="contacts">
+          <li>С 10 до 20, ежедневно</li>
+          <li>8 812 450-25-25</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженого "Глэйси шоп"</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Предложение дня</h2>
+        <div class="slider slide-1">
+          <h3>Крем брюле и пломбир с малиновым джемом</h3>
+          <img src="img/index/slider.svg" alt="Крем брюле и пломбир с малиновым джемом">
+          <span class="button bnt-slider">Давайте оба</span>
+        </div>
+        <div class="slider slide-2">
+          <h3>Шоколадный пломбир и лимонный сорбет</h3>
+          <img src="img/index/slider.svg" alt="Шоколадный пломбир и лимонный сорбет">
+          <span class="button bnt-slider">Давайте оба</span>
+        </div>
+        <div class="slider slide-3">
+          <h3>Пломбир с помадкой и клубничный щербет</h3>
+          <img src="img/index/slider.svg" alt="Пломбир с помадкой и клубничный щербет">
+          <span class="button bnt-slider">Давайте оба</span>
+        </div>
+      </section>
+      <section class="for-free">
+        <h2 class="visually-hidden">Получи подарок</h2>
+        <div class="for-free first">
+          <h3 class="free">Малинка даром!</h3>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <span class="button bnt-free">Хочу варенье</span>
+        </div>
+        <div class="for-free second">
+          <h3 class="free">Шоколадки даром!</h3>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <span class="button bnt-free">Хочу шоколадки</span>
+        </div>
+      </section>
+      <section class="images-ice-cream">
+        <h2 class="visually-hidden">Хиты продаж</h2>
+      <figure>
+        <a href="#"><img src="img/index/ice.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+        <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
+        <span class="hit">Хит</span>
+        <span class="price">310 р/кг</span>
+      </figure>
+      <figure>
+        <a href="cream-coffee"><img src="img/index/ice.jpg" alt="Сливочно-кофейное с кусочками шоколада"></a>
+        <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+        <span class="hit">Хит</span>
+        <span class="price">380 р/кг</span>
+      </figure>
+      <figure>
+        <a href="cream-strawberry"><img src="img/index/ice.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+        <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+        <span class="hit">Хит</span>
+        <span class="price">355 р/кг</span>
+      </figure>
+      <figure>
+        <a href="cream-caramel"><img src="img/index/ice.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+        <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+        <span class="hit">Хит</span>
+        <span class="price">355 р/кг</span>
+      </figure>
+    </section>
+    <article class="blog">
+      <h2 class="visually-hidden">Блог</h2>
+      <h3>Новое в нашем блоге</h3>
+      <p>10 способов сервировки фруктовых щербетов к столу</p>
+    </article>
+    <section class="sign-on">
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <span class="button bnt-sign-on">Отправить</span>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <img src="map.jpg" alt="Карта">
+      <p>
+        Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная
+        19/18, Санкт-Петербург
+      </p>
+      <p>
+        Для заказов по телефону:
+        8 812 450-25-25
+        (с 10 до 20 ежедневно)
+      </p>
+      <span class="button bnt-feed-back">Форма обратной связи</span>
+    </section>
+    </main>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Инстаграмм</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+      </ul>
+    </div>
+    <p class="footer-info">
+      <a href="for-suppliers.html">Для поставщиков</a>
+      <a href="prpduction.html">О производстве</a>
+      <a href="documents.html">Наши документы</a>
+      <a href="standarts.html">Экологические стандарты</a>
+    </p>
+    <div class="footer-copyright">
+      <img src="logo.html" alt="Логотип разработчика">
+      <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 	&copy; 2017</p>
+    </div>
+    </footer>
   </body>
 </html>
