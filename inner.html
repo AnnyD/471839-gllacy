@@ -16,31 +16,43 @@
             <li><a href="about-company.html">О Компании</a></li>
           </ul>
         <ul class="user-navigation">
-          <li class="visually-hidden">Поиск</li>
+          <li class="search">Поиск</li>
           <li class="login">Вход</li>
-          <li class="basket">Корзина</li>
+          <li class="basket">Корзина
+            <div class="market-basket">
+            <table>
+              <tr>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1.5 кг х 200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1.5 кг х 300 руб.</td>
+              <td>Итого: 450 руб.</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Итого: 750 руб.</td>
+              </tr>
+          </table>
+        </div>
+        </li>
         </ul>
-    <!-- Не знаю, как оформить выпадающее окно корзины
-    <ul>
-      <li>Пломбир с апельсиновым джемом</li>
-      <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-    </ul>
-    <span>Итого: 750 руб.</span>
-    <span class="button bnt-order">Оформить заказ</span>
-  -->
         <ul class="contacts">
           <li>С 10 до 20, ежедневно</li>
           <li>8 812 450-25-25</li>
         </ul>
-        <ul class="breadcrumbs">
-          <li>Главная</li>
-          <li>Каталог</li>
-          <li>Сливочное</li>
-        </ul>
       </nav>
     </header>
-    <main class="catalog">
-      <section class="choice">
+    <main class="catalog-ice-cream">
+      <ul class="breadcrumbs">
+        <li>Главная</li>
+        <li>Каталог</li>
+        <li>Сливочное</li>
+      </ul>
+      <section class="filter">
         <h1>Сливочное мороженое</h1>
         <span>Сортировка</span>
         <select name="sort">
@@ -63,83 +75,83 @@
       <input type="checkbox">Фрукты
         <input type="checkbox">Сиропы
         <input type="checkbox">Джемы
-        <button class="bnt-choice">Применить</button>
-      <section class="catalog ice-cream">
+        <button class="bnt-filter">Применить</button>
+      <section class="catalog">
         <h2 class="visually-hidden">Каталог мороженого</h2>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <p class="price">310 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочно-кофейное c кусочками шоколада"></a>
           <p>Сливочно-кофейное c кусочками шоколада</p>
           <p class="price">380 р/кг</p>
-          <button class="button bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           <p class="price">355 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное крем-брюле с карамельной подливкой"></a>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
           <p class="price">415 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное с брусничным джемом"></a>
           <p>Сливочное с брусничным джемом</p>
           <p class="price">325 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочно-черничное с цельными ягодами черники"></a>
           <p>Сливочно-черничное с цельными ягодами черники</p>
           <p class="price">410 р/кг</p>
           <button class="bnt-catalog">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочно-лимонное с карамельной присыпкой"></a>
           <p>Сливочно-лимонное с карамельной присыпкой</p>
           <p class="price">375 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное с шоколадной стружкой"></a>
           <p>Сливочное с шоколадной стружкой</p>
           <p class="price">320 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочно-ванильное с кусочками шоколада"></a>
           <p>Сливочно-ванильное с кусочками шоколада</p>
           <p class="price">440 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочноe с ментоловым сиропом"></a>
           <p>Сливочноe с ментоловым сиропом</p>
           <p class="price">435 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное с кусочками черного шоколада"></a>
           <p>Сливочное с кусочками черного шоколада</p>
           <p class="price">355 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
-        <div class="catalog">
+        <div class="catalog-item">
           <a href="#"><img src="img/index/ice.jpg" width="150" height="100" alt="Сливочное с мятным сиропом"></a>
           <p>Сливочное с мятным сиропом</p>
           <p class="price">420 р/кг</p>
-          <button class="bnt-catalog">Быстрый просмотр</button>
+          <button class="bnt-catalog-item">Быстрый просмотр</button>
         </div>
       </section>
-      <div class="numbers">
+      <div class="pagination">
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
