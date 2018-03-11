@@ -11,7 +11,7 @@
           <img src="img/index/logo.svg" width="154" height="62" alt="Логотип магазина мороженого Gllacy Shop">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Каталог</a>
+          <li><a href="inner.html">Каталог</a>
             <ul>
               <li><a href="news.html">Новинки</a>
                 <ul>
@@ -27,9 +27,9 @@
           <li><a href="about-company.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search">Поиск</li>
-          <li class="login">Вход</li>
-          <li class="basket">Корзина</li>
+          <li class="search"><button type="button" aria-label="Кнопка Поиск">Поиск</button></li>
+          <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
+          <li class="basket"><button type="button" aria-label="Корзина">Пусто</button></li>
         </ul>
       </nav>
       <div class="contacts">
@@ -41,7 +41,15 @@
       <h1 class="visually-hidden">Магазин мороженого "Глэйси шоп"</h1>
       <section class="slider">
         <h2 class="visually-hidden">Предложение дня</h2>
+        <input id="slide-button-1" class="visually-hidden" type="radio" name="slider-button" value="bnt-1" aria-label="Крем брюле и пломбир с малиновым джемом" checked>
+        <input id="slide-button-2" class="visually-hidden" type="radio" name="slider-button" value="bnt-2" aria-label="Шоколадный пломбир и лимонный сорбет">
+        <input id="slide-button-3" class="visually-hidden" type="radio" name="slider-button" value="bnt-3" aria-label="Пломбир с помадкой и клубничный щербет">
         <div class="slider slide-1">
+          <div class="slider-label">
+          <label class="bnt-radio" for="slide-button-1"></label>
+          <label class="bnt-radio" for="slide-button-2"></label>
+          <label class="bnt-radio" for="slide-button-3"></label>
+        </div>
           <h3>Крем брюле и пломбир с малиновым джемом</h3>
           <img src="img/png/slide-1.png" width="647" height="584" alt="Крем брюле и пломбир с малиновым джемом">
           <button class="bnt-slider">Давайте оба</button>
@@ -104,12 +112,15 @@
     <article class="blog">
       <h2 class="visually-hidden">Блог</h2>
       <h3>Новое в нашем блоге</h3>
-      <p>10 способов сервировки фруктовых щербетов к столу</p>
+      <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
     </article>
     <section class="subscribe">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" placeholder="Электронная почта">
+        </form>
         <button class="bnt-sign-on">Отправить</button>
     </section>
     <section class="contacts">
@@ -124,16 +135,16 @@
         8 812 450-25-25
         (с 10 до 20 ежедневно)
       </p>
-      <button class="bnt-feed-back">Форма обратной связи</button>
+      <button class="bnt-feedback" type="button">Форма обратной связи</button>
     </section>
     </main>
   <footer class="main-footer">
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Инстаграмм</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="https://twitter.com/">Твиттер</a></li>
+        <li><a class="social-button" href="https://www.instagram.com/">Инстаграмм</a></li>
+        <li><a class="social-button" href="https://www.facebook.com/">Фейсбук</a></li>
+        <li><a class="social-button" href="https://vk.com/feed">Вконтакте</a></li>
       </ul>
     </div>
     <p class="footer-info">
@@ -143,9 +154,60 @@
       <a href="standarts.html">Экологические стандарты</a>
     </p>
     <div class="footer-copyright">
-      <img src="logo.html" alt="Логотип разработчика">
+      <a href="https://htmlacademy.ru"><img src="logo.html" alt="Логотип разработчика"></a>
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 	&copy; 2017</p>
     </div>
     </footer>
+    <section class="user-search">
+      <h3 class="visually-hidden">Поле поиска товара</h3>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="text" name="search" placeholder="Что ищем?">
+      </form>
+    </section>
+    <section class="user-form">
+      <h3 class="visually-hidden">Введите ваши данные для входа</h3>
+    <form class="user" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user-email" class="visually-hidden">Укажите вашу электронную почту</label>
+      </p>
+      <p>
+        <input id="user-email" type="email" name="email" placeholder="Электронная почта">
+      </p>
+      <p>
+        <label for="password" class="visually-hidden">Укажите пароль</label>
+      </p>
+      <p>
+        <input id="password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <button type="submit" aria-label="Кнопка Войти">Войти</button>
+      <p>
+        <a href="https://echo.htmlacademy.ru">Забыли пароль?</a>
+      </p>
+      <p>
+        <a href="https://echo.htmlacademy.ru">Новая регистрация</a>
+      </p>
+    </form>
+  </section>
+  <section class="feedback">
+    <h3 class="visually-hidden">Заполните форму обратной связи</h3>
+    <p>Мы обязательно вам ответим!</p>
+    <button class="feedback-close" type="button" aria-label="Кнопка Закрыть"></button>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label>
+          <input type="text" name="user-name" placeholder="Как вас зовут?">
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        </label>
+      </p>
+      <p>
+        <textarea name="text">Напишите что-нибудь</textarea>
+      </p>
+      <button type="submit" aria-label="Кнопка Отправить">Отправить</button>
+    </form>
+  </section>
   </body>
 </html>
