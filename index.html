@@ -154,7 +154,7 @@
       <a href="standarts.html">Экологические стандарты</a>
     </p>
     <div class="footer-copyright">
-      <a href="https://htmlacademy.ru"><img src="logo.html" alt="Логотип разработчика"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo.html" alt="Логотип разработчика"></a>
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 	&copy; 2017</p>
     </div>
     </footer>
@@ -169,14 +169,10 @@
     <form class="user" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="user-email" class="visually-hidden">Укажите вашу электронную почту</label>
-      </p>
-      <p>
         <input id="user-email" type="email" name="email" placeholder="Электронная почта">
       </p>
       <p>
         <label for="password" class="visually-hidden">Укажите пароль</label>
-      </p>
-      <p>
         <input id="password" type="password" name="password" placeholder="Пароль">
       </p>
       <button type="submit" aria-label="Кнопка Войти">Войти</button>
@@ -194,9 +190,8 @@
     <button class="feedback-close" type="button" aria-label="Кнопка Закрыть"></button>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
-        <label>
-          <input type="text" name="user-name" placeholder="Как вас зовут?">
-        </label>
+        <label class="visually-hidden" for="user-name">Ваше имя?</label>
+        <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
       </p>
       <p>
         <label>
