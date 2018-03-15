@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header>
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index/logo.svg" width="154" height="62" alt="Логотип магазина мороженого Gllacy Shop">
+          <img src="img/svg/logo-gllacy.svg" width="153" height="63" alt="Логотип магазина мороженого Gllacy Shop">
         </a>
         <ul class="site-navigation">
           <li><a href="inner.html">Каталог</a>
-            <ul>
+            <ul class="catalog-list">
               <li><a href="news.html">Новинки</a>
                 <ul>
                   <li><a href="inner.html">Сливочное</a></li>
@@ -32,7 +35,7 @@
           <li class="basket"><button type="button" aria-label="Корзина">Пусто</button></li>
         </ul>
       </nav>
-      <div class="contacts">
+      <div class="working-hours">
         <p>С 10 до 20, ежедневно</p>
         <p>8 812 450-25-25</p>
       </div>
@@ -67,12 +70,12 @@
       </section>
       <section class="for-free">
         <h2 class="visually-hidden">Получи подарок</h2>
-        <div class="for-free first">
+        <div class="for-free-raspberry">
           <h3 class="free">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button class="bnt-free">Хочу варенье</button>
         </div>
-        <div class="for-free second">
+        <div class="for-free-chocolate">
           <h3 class="free">Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <button class="bnt-free">Хочу шоколадки</button>
@@ -84,30 +87,46 @@
         <a href="#"><img src="img/jpg/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
         <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         <span class="hit">Хит</span>
-        <p class="price">310 р/кг</p>
+        <p class="price">310<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
         <button class="bnt-catalog-item">Быстрый просмотр</button>
       </div>
       <div class="catalog-item">
         <a href="cream-coffee"><img src="img/jpg/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
         <p>Сливочно-кофейное с кусочками шоколада</p>
         <span class="hit">Хит</span>
-        <p class="price">380 р/кг</p>
+        <p class="price">380<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
         <button class="bnt-catalog-item">Быстрый просмотр</button>
       </div>
       <div class="catalog-item">
         <a href="cream-strawberry"><img src="img/jpg/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
         <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
         <span class="hit">Хит</span>
-        <p class="price">355 р/кг</p>
+        <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
         <button class="bnt-catalog-item">Быстрый просмотр</button>
       </div>
       <div class="catalog-item">
         <a href="cream-caramel"><img src="img/jpg/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
         <p>Сливочное крем-брюле с карамельной подливкой</p>
         <span class="hit">Хит</span>
-        <p class="price">355 р/кг</p>
+        <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
         <button class="bnt-catalog-item">Быстрый просмотр</button>
       </div>
+    </section>
+    <section class="about-us">
+    <h2 class="visually-hidden">Описание технологии производства и доставки мороженого Глейси</h2>
+      <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+      <p>
+        Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+      </p>
+      <p>
+        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+      </p>
+      <p>
+        Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+      </p>
+      <p>
+        Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+      </p>
     </section>
     <article class="blog">
       <h2 class="visually-hidden">Блог</h2>
@@ -125,17 +144,19 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img src="map.jpg" width="150" height="100" alt="Карта проезда">
+      <img src="img/jpg/map.jpg" width="1200" height="430" alt="Карта проезда">
+      <div class="address">
       <p>
-        Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная
-        19/18, Санкт-Петербург
+        Адрес главного офиса и офлайн-магазина: ул. <span>Большая Конюшенная
+        19/18, Санкт-Петербург</span>
       </p>
       <p>
         Для заказов по телефону:
-        8 812 450-25-25
+        <span>8 812 450-25-25</span>
         (с 10 до 20 ежедневно)
       </p>
       <button class="bnt-feedback" type="button">Форма обратной связи</button>
+    </div>
     </section>
     </main>
   <footer class="main-footer">
@@ -154,7 +175,7 @@
       <a href="standarts.html">Экологические стандарты</a>
     </p>
     <div class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo.html" alt="Логотип разработчика"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg" width="108" height="37" alt="Логотип разработчика"></a>
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 	&copy; 2017</p>
     </div>
     </footer>
@@ -175,7 +196,7 @@
         <label for="password" class="visually-hidden">Укажите пароль</label>
         <input id="password" type="password" name="password" placeholder="Пароль">
       </p>
-      <button type="submit" aria-label="Кнопка Войти">Войти</button>
+      <button class="bnt-user-form" type="submit" aria-label="Кнопка Войти">Войти</button>
       <p>
         <a href="https://echo.htmlacademy.ru">Забыли пароль?</a>
       </p>
@@ -185,7 +206,7 @@
     </form>
   </section>
   <section class="feedback">
-    <h3 class="visually-hidden">Заполните форму обратной связи</h3>
+    <h3 class="visually-hidden">Заполнение формы обратной связи</h3>
     <p>Мы обязательно вам ответим!</p>
     <button class="feedback-close" type="button" aria-label="Кнопка Закрыть"></button>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -201,7 +222,7 @@
       <p>
         <textarea name="text">Напишите что-нибудь</textarea>
       </p>
-      <button type="submit" aria-label="Кнопка Отправить">Отправить</button>
+      <button class="bnt-submit" type="submit" aria-label="Кнопка Отправить">Отправить</button>
     </form>
   </section>
   </body>
