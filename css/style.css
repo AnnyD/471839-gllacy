@@ -514,3 +514,58 @@ padding: 0;
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+
+/*Сеточные стили*/
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1146px;
+  margin-top: 9px;
+  margin-right: 27px;
+  margin-left: 27px;
+}
+
+.working-hours {
+  width: 267px;
+  padding-left: 879px;
+}
+.catalog-list {
+  display: none;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.site-navigation {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 34px;
+  margin-right: 13px;
+  justify-content: space-between;
+  width: 382px;
+}
+
+.user-navigation {
+  display: flex;
+  width: 267px;
+  margin-left: 319px;
+  justify-content: space-between;
+}
+
+.for-free {
+  display: flex;
+}
+
+.catalog {
+  display: flex;
+}
+
+.container-cards {
+  display: flex;
+}
+.main-footer {
+  display: flex;
+}
