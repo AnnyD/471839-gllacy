@@ -18,12 +18,54 @@ button {
   border: none;
 }
 
+.site-navigation,
+.user-navigation,
+.catalog-list li {
+  list-style: none;
+}
 
 .site-navigation a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: 333333;
+  background-color: #f7f6f3;
+}
+
+.catalog-list {
+  background-color: #f8f7f4;
+}
+.catalog-list a {
+  font-size:14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+.catalog-list a:hover,
+.catalog-list a:focus {
+  background-color: #fbded7;
+}
+
+.catalog-list a:active {
+  background-color: #f6b5a5;
+}
+
+a.catalog-list-novelty {
+  font-weight: 700;
+}
+
+a.catalog-list-novelty:hover,
+a.catalog-list-novelty:focus  {
+  background-color: #f8f7f4;
+}
+
+a.catalog-list-novelty:active {
+  background-color: #f8f7f4;
 }
 
 .user-navigation button {
@@ -35,20 +77,9 @@ button {
   background-color: #9db1a5;
 }
 
-.site-navigation,
-.user-navigation,
-.catalog-list li {
-  list-style: none;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #ffffff;
-}
 .user-navigation button:hover,
 .user-navigation button:focus {
-  color: #000000;
-  background-color: #ffffff;
+  color: #333333;
 }
 .working-hours {
   font-size: 22px;
@@ -56,7 +87,7 @@ button {
   font-weight: 700;
 }
 
-.working-hours:first-child { /*Не работает переопоеделение*/
+.working-hours p:first-child {
   font-size: 14px;
   line-height: 16px;
 }
@@ -66,53 +97,29 @@ button {
   color: #000000;
 }
 
-.catalog-list a {
-  font-size:14px;
-  line-height: 16px;
-  font-weight: 400;
-}
-.catalog-list ul a:hover, /*Как избежать вложенности больше 2-х?*/
-.catalog-list ul a:focus {
-  background-color: #fbded7;
-}
-
-.catalog-list ul a:active { /*Как избежать вложенности больше 2-х?*/
-  background-color: #f6b5a5;
-}
-
-.visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
-}
-
 .slider h3 {
   font-size: 60px;
   line-height: 60.35px;
   text-align: center;
   font-weight: 700;
 }
-.bnt-slider {
+.btn-slider {
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a; /*сделать градиент*/
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.bnt-slider:hover,
-.bnt-slider:focus {
-  background-color: #ef7762;
+.btn-slider:hover,
+.btn-slider:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
-.bnt-slider:active {
-  background-color: #eb553a; /*сделать градиент*/
+.btn-slider:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 .free h3 {
@@ -125,37 +132,39 @@ overflow: hidden;
   line-height: 22px;
   font-weight: 700;
 }
-.bnt-free {
+.btn-free {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
-.bnt-free:hover,
-.bnt-free:focus {
-  background-color: #ef7762;
+.btn-free:hover,
+.btn-free:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
-.bnt-free:active {
-  background-color: #eb553a; /*сделать градиент*/
+.btn-free:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
-.bnt-catalog-item {
+.btn-catalog-item {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.bnt-catalog-item:hover,
-.bnt-catalog-item:focus {
-  background-color: #ef7762;
+.btn-catalog-item:hover,
+.btn-catalog-item:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
-.bnt-catalog-item:active {
-background-color: #eb553a;
+.btn-catalog-item:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 .for-free-raspberry {
@@ -236,23 +245,24 @@ background-color: #eb553a;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .subscribe button:hover,
 .subscribe button:focus {
-  background-color: #ef7762;
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
 .subscribe button:active {
-background-color: #eb553a;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 .subscribe {
   width: 560px;
   height: 220px;
   background-color: #f8f7f4;
-  background-image: url("../img/svg/background-post.svg"); /*Не отображается*/
+  /*градиент*/
 }
 .subscribe input[type="email"] {
   font-size: 16px;
@@ -270,22 +280,23 @@ background-color: #eb553a;
   font-weight: 700;
 }
 
-.bnt-feedback {
+.btn-feedback {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.bnt-feedback:hover,
-.bnt-feedback:focus {
-  background-color: #ef7762;
+.btn-feedback:hover,
+.btn-feedback:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
-.bnt-feedback:active {
-background-color: #eb553a;
+.btn-feedback:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 .main-footer a {
 color: #ffffff;
@@ -326,10 +337,10 @@ color: #ffffff;
   color: #e84d37;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback input[type="password"],
+.feedback textarea {
   font-size: 14px;
   line-height: 24px;
   color: #999999;
@@ -346,22 +357,23 @@ textarea {
   text-decoration: underline;
 }
 
-.bnt-user-form {
+.btn-user-form {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.bnt-user-form:hover,
-.bnt-user-form:focus {
-  background-color: #ef7762;
+.btn-user-form:hover,
+.btn-user-form:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
-.bnt-user-form:active {
-background-color: #eb553a;
+.btn-user-form:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 .feedback > p {
@@ -372,27 +384,30 @@ background-color: #eb553a;
 .feedback {
   background-color: #f8f7f4
 }
-.bnt-submit {
+.btn-submit {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #eb553a;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.bnt-submit:hover,
-.bnt-submit:focus {
-  background-color: #ef7762;
+.btn-submit:hover,
+.btn-submit:focus {
+  background-image: linear-gradient(#f17d64, #f17d64);
 }
 
-.bnt-submit:active {
-background-color: #eb553a;
+.btn-submit:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
 }
 
 /*Стили внутренней страницы каталога*/
 
-.site-navigation-active {
+.site-navigation-active,
+.catalog-list-active
+ {
   background-color: #d07058;
 }
 .breadcrumbs li{
@@ -422,31 +437,31 @@ background-color: #eb553a;
   line-height: 16px;
   font-weight: 400;
 }
-fieldset {
+.filter fieldset {
   border: none;
 }
 .filter label {
   font-size: 16px;
-  line-height: 18px;
+  leline-height: 18px;
   font-weight: 500;
 }
 select[name="sort"] {
   color: #ffffff;
   background-color: #a8b9b0;
 }
-.bnt-filter {
+.btn-filter {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   font-weight: 400;
   background-color: #a8b9b0;
 }
-.bnt-filter:hover,
-.bnt-filter:focus {
+.btn-filter:hover,
+.btn-filter:focus {
   color: #000000;
   background-color: #fbfcfb;
 }
-.bnt-filter:active {
+.btn-filter:active {
   color: #000000;
   background-color: #eaeaea;
 }
@@ -461,4 +476,41 @@ select[name="sort"] {
 .pagination a:active {
   color: #000000;
   background-color: #ffffff;
+}
+
+.market-basket {
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.btn-order {
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.btn-order:hover,
+.btn-order:focus {
+  color: #ffffff;
+ background-image: linear-gradient(#f17d64, #f17d64);
+}
+
+.btn-order:active {
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
+}
+
+button.btn-delete {
+  background-color: #f8f7f4;
+}
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }

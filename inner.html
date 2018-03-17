@@ -14,16 +14,15 @@
           <img src="img/svg/logo-gllacy.svg" width="153" height="63" alt="Логотип магазина мороженого Gllacy Shop">
         </a>
           <ul class="site-navigation">
-            <li><a class="site-navigation-active" href="#">Каталог</a>
+            <li>
+              <a class="site-navigation-active" href="#">Каталог</a>
               <ul class="catalog-list">
-                <li><a href="news.html">Новинки</a>
-                  <ul>
-                    <li><a href="inner.html">Сливочное</a></li>
+                <li><a class="catalog-list-novelty">Новинки</a>
+                </li>
+                <li><a class="catalog-list-active">Сливочное</a></li>
                     <li><a href="sherbet.html">Щербеты</a></li>
                     <li><a href="fruit-ice.html">Фруктовый лед</a></li>
                     <li><a href="mellorine.html">Мелорин</a></li>
-                  </ul>
-                </li>
               </ul>
               </li>
             <li><a href="price.html">Доставка и оплата</a></li>
@@ -32,12 +31,13 @@
         <ul class="user-navigation">
           <li class="search"><button type="button" aria-label="Кнопка Поиск товара">Поиск</button></li>
           <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
-          <li class="basket"><button type="button" aria-label="Корзина товаров">Пусто</button>
+          <li class="basket">
+            <button type="button" aria-label="Корзина товаров">Пусто</button>
             <div class="market-basket">
             <table>
               <tr>
                 <td>
-                  <button class="bnt-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
+                  <button class="btn-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
                 </td>
               <td><img src="img/png/basket-ice-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
               <td>Пломбир с апельсиновым джемом</td>
@@ -46,7 +46,7 @@
             </tr>
             <tr>
               <td>
-                <button class="bnt-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
+                <button class="btn-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
               </td>
               <td><img src="img/png/basket-ice-cream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
@@ -58,7 +58,7 @@
               </tr>
           </table>
         </div>
-        <button type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
+        <button class="btn-order" type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
         </li>
         </ul>
         <div class="contacts">
@@ -71,7 +71,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
-        <li><a class="creamy" href="#">Сливочное</a></li>
+        <li><a class="creamy">Сливочное</a></li>
       </ul>
       <section class="filter">
         <h1>Сливочное мороженое</h1>
@@ -131,7 +131,7 @@
           <label for="jams">Джемы</label>
           </p>
         </fieldset>
-        <button class="bnt-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
+        <button class="btn-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
     </form>
   </section>
       <section class="catalog">
@@ -140,73 +140,73 @@
           <a href="#"><img src="img/jpg/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <p class="price">310<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное c кусочками шоколада"></a>
           <p>Сливочно-кофейное c кусочками шоколада</p>
           <p class="price">380<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
           <p class="price">415<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></a>
           <p>Сливочное с брусничным джемом</p>
           <p class="price">325<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></a>
           <p>Сливочно-черничное с цельными ягодами черники</p>
           <p class="price">410<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></a>
           <p>Сливочно-лимонное с карамельной присыпкой</p>
           <p class="price">375<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></a>
           <p>Сливочное с шоколадной стружкой</p>
           <p class="price">320<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></a>
           <p>Сливочно-ванильное с кусочками шоколада</p>
           <p class="price">440<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></a>
           <p>Сливочноe с ментоловым сиропом</p>
           <p class="price">435<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></a>
           <p>Сливочное с кусочками черного шоколада</p>
           <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></a>
           <p>Сливочное с мятным сиропом</p>
           <p class="price">420<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
-          <button class="bnt-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+          <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
       </section>
       <div class="pagination">
