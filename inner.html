@@ -33,6 +33,7 @@
           <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
           <li class="basket">
             <button type="button" aria-label="Корзина товаров">Пусто</button>
+            <div class="market-basket-container">
             <div class="market-basket">
             <table>
               <tr>
@@ -59,21 +60,23 @@
           </table>
         </div>
         <button class="btn-order" type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
+      </div>
         </li>
         </ul>
-        <div class="contacts">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a class="creamy">Сливочное</a></li>
+        </ul>
+        <div class="working-hours">
           <p>С 10 до 20, ежедневно</p>
           <p>8 812 450-25-25</p>
         </div>
       </nav>
     </header>
     <main class="catalog-ice-cream">
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a class="creamy">Сливочное</a></li>
-      </ul>
       <section class="filter">
+        <div class="filter-form-container">
         <h1>Сливочное мороженое</h1>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="filter-sort">
@@ -109,6 +112,8 @@
           </p>
         </fieldset>
         <fieldset class="toppings-filter">
+        </div>
+        <div class="filter-form-container-1">
           <legend>Наполнители</legend>
           <p>
           <input id="choco" type="checkbox" checked>
@@ -132,6 +137,7 @@
           </p>
         </fieldset>
         <button class="btn-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
+      </div>
     </form>
   </section>
       <section class="catalog">
