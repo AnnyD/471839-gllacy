@@ -63,20 +63,19 @@
       </div>
         </li>
         </ul>
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a class="creamy">Сливочное</a></li>
-        </ul>
-        <div class="working-hours">
-          <p>С 10 до 20, ежедневно</p>
-          <p>8 812 450-25-25</p>
-        </div>
       </nav>
+      <div class="working-hours">
+        <p>С 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+      </div>
     </header>
     <main class="catalog-ice-cream">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a class="creamy">Сливочное</a></li>
+      </ul>
       <section class="filter">
-        <div class="filter-form-container">
         <h1>Сливочное мороженое</h1>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="filter-sort">
@@ -94,6 +93,7 @@
         </fieldset>
         <fieldset class="fatness-filter">
           <legend>Жирность</legend>
+          <div class="filter-flex-container">
           <p>
           <input id="fatness-0" type="radio" name="fatness" value="0">
           <label for="fatness-0">0%</label>
@@ -110,11 +110,11 @@
           <input id="fatness-more-30" type="radio" name="fatness" value="more than 30">
           <label for="fatness-more-30">выше 30%</label>
           </p>
+        </div>
         </fieldset>
         <fieldset class="toppings-filter">
-        </div>
-        <div class="filter-form-container-1">
           <legend>Наполнители</legend>
+          <div class="filter-flex-container">
           <p>
           <input id="choco" type="checkbox" checked>
           <label for="choco">Шоколадные</label>
@@ -135,85 +135,111 @@
           <input id="jams" type="checkbox">
           <label for="jams">Джемы</label>
           </p>
+        </div>
         </fieldset>
         <button class="btn-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
-      </div>
     </form>
   </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог мороженого</h2>
+        <div class="catalog-container">
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <p class="price">310<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+        </div>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-2.jpg" width="267" height="267" alt="Сливочно-кофейное c кусочками шоколада"></a>
           <p>Сливочно-кофейное c кусочками шоколада</p>
           <p class="price">380<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
+        </div>
         </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
           <p class="price">415<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"></a>
           <p>Сливочное с брусничным джемом</p>
           <p class="price">325<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники"></a>
           <p>Сливочно-черничное с цельными ягодами черники</p>
           <p class="price">410<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой"></a>
           <p>Сливочно-лимонное с карамельной присыпкой</p>
           <p class="price">375<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"></a>
           <p>Сливочное с шоколадной стружкой</p>
           <p class="price">320<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада"></a>
           <p>Сливочно-ванильное с кусочками шоколада</p>
           <p class="price">440<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"></a>
           <p>Сливочноe с ментоловым сиропом</p>
           <p class="price">435<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада"></a>
           <p>Сливочное с кусочками черного шоколада</p>
           <p class="price">355<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
         <div class="catalog-item">
           <a href="#"><img src="img/jpg/ice-cream-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"></a>
           <p>Сливочное с мятным сиропом</p>
           <p class="price">420<img src="img/svg/ruble.svg" width="31" height="33" alt="Рубль">/кг</p>
+          <div class="catalog-footer">
           <button class="btn-catalog-item" aria-label="Кнопка просмотра товара">Быстрый просмотр</button>
         </div>
+      </div>
+    </div>
       </section>
       <div class="pagination">
         <a href="#">1</a>
