@@ -8,6 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="main-container">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -80,7 +81,7 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="filter-sort">
           <legend>Сортировка</legend>
-        <select name="sort">
+        <select class="sort" name="sort">
           <option value="hits">По популярности</option>
           <option value="cheap">Сначала недорогие</option>
           <option value="expensive">Сначала дорогие</option>
@@ -249,7 +250,7 @@
         <a href="#">5</a>
       </div>
     </main>
-<footer class="main-footer">
+<footer class="main-footer inner">
   <div class="footer-social">
     <ul>
       <li><a class="social-button" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">Твиттер</a></li>
@@ -258,16 +259,21 @@
       <li><a class="social-button" href="https://vk.com/feed" aria-label="Ссылка на сайт Вконтакте">Вконтакте</a></li>
     </ul>
   </div>
-  <p class="footer-info">
-    <a href="for-suppliers.html" aria-label="Ссылка на раздел Для поставщиков">Для поставщиков</a>
-    <a href="production.html" aria-label="Ссылка на раздел О производстве">О производстве</a>
-    <a href="documents.html" aria-label="Ссылка на раздел Наши документы">Наши документы</a>
-    <a href="standarts.html" aria-label="Ссылка на раздел Экологические стандарты">Экологические стандарты</a>
-  </p>
+  <ul class="footer-info inner">
+    <div class="info">
+    <li><a href="for-suppliers.html">Для поставщиков</a></li>
+    <li><a href="production.html">О производстве</a></li>
+  </div>
+  <div class="doc">
+    <li><a href="documents.html">Наши документы</a></li>
+    <li><a href="standarts.html">Экологические стандарты</a></li>
+  </div>
+  </ul>
   <div class="footer-copyright">
     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg" width="108" height="37" alt="Логотип разработчика"></a>
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>&copy; 2017</p>
   </div>
   </footer>
+</div>
   </body>
 </html>

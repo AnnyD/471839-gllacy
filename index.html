@@ -12,6 +12,7 @@
     <input id="slide-button-2" class="visually-hidden" type="radio" name="slider-button" value="btn-2" aria-label="Шоколадный пломбир и лимонный сорбет">
     <input id="slide-button-3" class="visually-hidden" type="radio" name="slider-button" value="btn-3" aria-label="Пломбир с помадкой и клубничный щербет">
     <div class="site-wrapper">
+      <div class="main-container">
       <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -187,10 +188,14 @@
       </ul>
     </div>
     <ul class="footer-info">
+      <div class="info">
       <li><a href="for-suppliers.html">Для поставщиков</a></li>
       <li><a href="production.html">О производстве</a></li>
+    </div>
+    <div class="doc">
       <li><a href="documents.html">Наши документы</a></li>
       <li><a href="standarts.html">Экологические стандарты</a></li>
+    </div>
     </ul>
     <div class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo-html.svg" width="108" height="37" alt="Логотип разработчика"></a>
@@ -226,7 +231,7 @@
   <section class="feedback">
     <h3 class="visually-hidden">Заполнение формы обратной связи</h3>
     <p>Мы обязательно вам ответим!</p>
-    <button class="feedback-close" type="button" aria-label="Кнопка Закрыть"></button>
+    <button class="feedback-close" type="button" aria-label="Кнопка Закрыть">Закрыть</button>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="visually-hidden" for="user-name">Ваше имя?</label>
@@ -238,11 +243,12 @@
         </label>
       </p>
       <p>
-        <textarea name="text">Напишите что-нибудь</textarea>
+        <textarea name="text">Напишите что-нибудь...</textarea>
       </p>
       <button class="btn-submit" type="submit" aria-label="Кнопка Отправить">Отправить</button>
     </form>
   </section>
+</div>
 </div>
   </body>
 </html>
