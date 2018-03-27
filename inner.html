@@ -16,14 +16,14 @@
         </a>
           <ul class="site-navigation">
             <li>
-              <a class="site-navigation-active" href="#">Каталог</a>
+              <a class="site-navigation-active sub" href="#">Каталог</a>
               <ul class="catalog-list">
-                <li><a class="catalog-list-novelty">Новинки</a>
+                <li><a class="catalog-list-novelty sub">Новинки</a>
                 </li>
-                <li><a class="catalog-list-active">Сливочное</a></li>
-                    <li><a href="sherbet.html">Щербеты</a></li>
-                    <li><a href="fruit-ice.html">Фруктовый лед</a></li>
-                    <li><a href="mellorine.html">Мелорин</a></li>
+                <li><a class="catalog-list-active sub">Сливочное</a></li>
+                    <li><a class="sub" href="sherbet.html">Щербеты</a></li>
+                    <li><a class="sub" href="fruit-ice.html">Фруктовый лед</a></li>
+                    <li><a class="sub" href="mellorine.html">Мелорин</a></li>
               </ul>
               </li>
             <li><a href="price.html">Доставка и оплата</a></li>
@@ -32,11 +32,10 @@
         <ul class="user-navigation">
           <li class="search"><button type="button" aria-label="Кнопка Поиск товара">Поиск</button></li>
           <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
-          <li class="basket">
-            <button type="button" aria-label="Корзина товаров">Пусто</button>
+          <li class="basket basket-goods">
+            <button class="market-add" type="button" aria-label="Корзина товаров">2 товара</button>
             <div class="market-basket-container">
-            <div class="market-basket">
-            <table>
+            <table class="market-basket">
               <tr>
                 <td>
                   <button class="btn-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
@@ -59,7 +58,6 @@
                 <td colspan="5">Итого: 750 руб.</td>
               </tr>
           </table>
-        </div>
         <button class="btn-order" type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
       </div>
         </li>
@@ -72,8 +70,8 @@
     </header>
     <main class="catalog-ice-cream">
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="index.html">Главная</a><span> » </span></li>
+        <li><a href="catalog.html">Каталог</a><span> » </span></li>
         <li><a class="creamy">Сливочное</a></li>
       </ul>
       <section class="filter">
@@ -90,7 +88,13 @@
         </fieldset>
         <fieldset class="filter-price">
           <legend>Цена 100 руб. - 500 руб.</legend>
-          <label>100<input type="range" min="100" max="500">500</label>
+          <div class="range-controls">
+            <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
         </fieldset>
         <fieldset class="fatness-filter">
           <legend>Жирность</legend>
@@ -115,7 +119,7 @@
         </fieldset>
         <fieldset class="toppings-filter">
           <legend>Наполнители</legend>
-          <div class="filter-flex-container">
+          <div class="filter-flex-container top">
           <p>
           <input id="choco" type="checkbox" checked>
           <label for="choco">Шоколадные</label>
@@ -138,7 +142,7 @@
           </p>
         </div>
         </fieldset>
-        <button class="btn-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
+<button class="btn-filter" aria-label="Кнопка Применить выбранные параметры">Применить</button>
     </form>
   </section>
       <section class="catalog">
@@ -242,21 +246,23 @@
       </div>
     </div>
       </section>
-      <div class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
+      <ul class="pagination">
+        <li class="page-active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
     </main>
 <footer class="main-footer inner">
   <div class="footer-social">
-    <ul>
-      <li><a class="social-button" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">Твиттер</a></li>
-      <li><a class="social-button" href="https://www.instagram.com/" aria-label="Ссылка на сайт Инстаграмм">Инстаграмм</a></li>
-      <li><a class="social-button" href="https://www.facebook.com/" aria-label="Ссылка на сайт Фейсбук">Фейсбук</a></li>
-      <li><a class="social-button" href="https://vk.com/feed" aria-label="Ссылка на сайт Вконтакте">Вконтакте</a></li>
+    <ul class="btn-social">
+      <li><a class="social-button" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">
+        <img src="img/svg/twitter.svg">Твиттер</a></li>
+      <li><a class="social-button" href="https://www.instagram.com/" aria-label="Ссылка на сайт Инстаграмм">
+        <img src="img/svg/instagram.svg">Инстаграмм</a></li>
+      <li><a class="social-button" href="https://www.facebook.com/" aria-label="Ссылка на сайт Фейсбук"><img src="img/svg/fb.svg">Фейсбук</a></li>
+      <li><a class="social-button" href="https://vk.com/feed" aria-label="Ссылка на сайт Вконтакте"><img src="img/svg/vk.svg">Вконтакте</a></li>
     </ul>
   </div>
   <ul class="footer-info inner">
