@@ -41,10 +41,10 @@ button {
 }
 
 /*выпадающее меню и корзина*/
-.catalog-list,
+/*.catalog-list,
 .market-basket-container {
-  display: none;
-}
+display: none;
+}*/
 
 .main-header {
   width: 1146px;
@@ -83,7 +83,7 @@ button {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 32px;
   font-weight: 500;
   color: #ffffff;
   height: 32px;
@@ -115,9 +115,9 @@ button {
   background-color: #b0c8ba;
 }
 
-.site-navigation a:hover::before,
-.site-navigation a:focus::before,
-.site-navigation a:active::before {
+.site-navigation a:not(.sub):hover::before,
+.site-navigation a:not(.sub):focus::before,
+.site-navigation a:not(.sub):active::before {
   display: none;
 }
 
@@ -126,7 +126,7 @@ button {
 .catalog-list {
   position: absolute;
   top: 60px;
-  left: 20px;
+  left: 9px;
   width: 143px;
   padding: 0;
   min-height: 171px;
@@ -135,23 +135,32 @@ button {
   border-radius: 5px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
   z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease .15s;
+  /*display: none;*/
+}
 
-  /*display: none; /* СКРЫТЬ ВЫПАДАЮЩЕЕ МЕНЮ */
+.site-navigation > li:hover .catalog-list {
+  /*display: block;*/
+  opacity: 1;
+  visibility: visible;
 }
 
 .catalog-list li {
   background-color: #f8f7f4;
   border: none;
-  height: 28px;
+  min-height: 28px;
   vertical-align: middle;
-  margin: 5px 0;
+  margin-top: 2px;
 }
 
 .catalog-list a {
   display: block;
   padding-left: 21px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 32px;
+  text-align: left;
   font-weight: 400;
   color: #323232;
   border-radius: 0;
@@ -182,9 +191,9 @@ a.catalog-list-novelty::before {
   position: absolute;
   content: "";
   height: 1px;
-  bottom: 0px;
-  left: 14px;
-  right: 20px;
+  bottom: -7px;
+  left: 7px;
+  right: 10px;
   background-color: #d1d0ce;
 }
 
@@ -234,6 +243,14 @@ border-radius: 50%;
   background-image: url("../img/svg/loupe-active.svg");
 }
 
+.search button:hover .user-search,
+.search button:focus .user-search {
+ /*display: block;*/
+ opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease .15s;
+}
+
 .login button {
   position: relative;
   padding-left: 43px;
@@ -260,19 +277,26 @@ border-radius: 50%;
   background-image: url("../img/svg/entrance-active.svg");
 }
 
-
-.basket button {
-  position: relative;
-  padding-left: 44px;
-  padding-right: 34px;
-  border-radius: 16px;
-  height: 32px;
-  width: 117px;
-  font-size: 14px;
-  line-height: 16px;
+.login:hover .user-form {
+  /*display: block;*/
+  opacity: 1; /* Показываем подменю при ховере */
+    visibility: visible;
 }
 
-.basket button::before {
+/*корзина товаров*/
+.basket-empty,
+.basket-add {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  height: 32px;
+  width: 117px;
+  border-radius: 16px;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.basket-empty::before {
   position: absolute;
   content: "";
   top: 6px;
@@ -282,12 +306,24 @@ border-radius: 50%;
   background-image: url("../img/svg/basket.svg");
   background-repeat: no-repeat;
 }
-.basket-goods button {
-  padding-right: 14px;
-  color: #323232;
-  background-color: #f8f7f4;
+.market-basket-container {
+  opacity: 0; /* По умолчанию скрываем подменю */
+   visibility: hidden;
+   transition: all .3s ease .15s; /* Добавляем анимацию 0.3 сек. и задержку в 0.15 сек. */
 }
-.basket-goods button::before {
+
+.basket-inner:hover .market-basket-container {
+  opacity: 1; /* Показываем подменю при ховере */
+     visibility: visible;
+}
+
+.basket-empty:hover::before,
+.basket-empty:focus::before {
+  background-image: url("../img/svg/basket-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.basket-add::before {
   position: absolute;
   content: "";
   top: 6px;
@@ -297,6 +333,7 @@ border-radius: 50%;
   background-image: url("../img/svg/basket-red.svg");
   background-repeat: no-repeat;
 }
+
 /* часы работы и телефон*/
 
 .working-hours {
@@ -919,6 +956,7 @@ h3.free  {
   .pagination {
     display: flex;
     width: 190px;
+    margin-left: auto;
   }
 
 .pagination ul,
@@ -929,30 +967,43 @@ h3.free  {
 }
 
 .pagination li {
-  margin-right: 20px;
-}
-
-.page-active {
-  width: 26px;
-  height: 26px;
-  color: #323232;
-  background: rgba(255, 255, 255, 1);
-  border-radius: 50%;
+  margin-right: 10px;
 }
 
   .pagination a {
+    display: block;
+    width: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
     color: #ffffff;
+    border-radius: 50%;
   }
+  .page-active a {
+    color: #000000;
+  }
+
   .pagination a:hover,
   .pagination a:focus {
     color: #000000;
     background-color: #9db1a5;
   }
   .pagination a:active {
-    color: #000000;
+    color: #black;
     background-color: #ffffff;
   }
 
+  .page-active {
+    font-size: 16px;
+    line-height: 26px;
+    width: 26px;
+    font-weight: 500;
+    color: black;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    text-align: center;
+  }
   /* END PAGINATION */
 
 /* END CATALOG */
@@ -1287,6 +1338,7 @@ color: #ffffff;
 }
 
   .social-button {
+    display: block;
   width: 38px;
   height: 38px;
   font-size: 0;
@@ -1487,17 +1539,20 @@ padding-left: 14px;
 
 .user-search {
   position: absolute;
-  top: 57px;
-  right: 330px;
+  top: 60px;
+  right: 230px;
   width: 341px;
   height: 84px;
   border-radius: 5px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 24px;\
   color: #999999;
   margin: 0;
 
-  display: none; /* СКРЫТЬ ПОПАП */
+  /*display: none; /* СКРЫТЬ ПОПАП */
+  opacity: 0; /* По умолчанию скрываем подменю */
+     visibility: hidden;
+     transition: all .3s ease .15s; /* Добавляем анимацию 0.3 сек. и задержку в 0.15 сек. */
 }
 
 
@@ -1509,6 +1564,14 @@ padding-left: 14px;
   padding-left: 14px;
   margin-left: 15px;
   margin-top: 20px;
+}
+
+.search:hover .user-search,
+.serch:focus .user-search {
+  /*display: block;*/
+  opacity: 1; /* Показываем подменю при ховере */
+    visibility: visible;
+
 }
 /* выпадающее окно регистрации */
 
@@ -1522,12 +1585,15 @@ padding-left: 14px;
 .user-form {
   position: absolute;
   top: 60px;
-  right: 225px;
+  right: 130px;
   width: 277px;
   min-height: 214px;
   border-radius: 5px;
 
-  display: none; /* СКРЫТЬ ПОПАП */
+  /*display: none; /* СКРЫТЬ ПОПАП */
+  opacity: 0; /* По умолчанию скрываем подменю */
+    visibility: hidden;
+    transition: all .3s ease .15s; /* Добавляем анимацию 0.3 сек. и задержку в 0.15 сек. */
 }
 
 .user-form input[type="email"],
@@ -1582,21 +1648,25 @@ padding-left: 14px;
 .market-basket-container {
   position: absolute;
   top:60px;
-  right: 30px;
-  width: 540px;
-  min-height: 243px;
+  right: 0;
+  width: 509px;
+  min-height: 203px;
   font-size: 13px;
   line-height: 18px;
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 5px;
- margin-bottom: 20px;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,.6);
+  /*margin-bottom: 20px;*/
+  padding-top: 20px;
+  padding-left: 14px;
+  padding-right: 19px;
+  padding-bottom: 17px;
 }
-
 .market-basket {
-  margin-top: 20px;
+  /*margin-top: 20px;
   margin-left: 15px;
-  margin-right: 15px;
+  margin-right: 15px;*/
 
   width: 100%;
   border-collapse: collapse;
@@ -1611,7 +1681,7 @@ padding-left: 14px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  margin-right: 15px;
+  /*margin-right: 15px;*/
   margin-left: auto;
   height: 46px;
   width: 170px;
@@ -1621,7 +1691,6 @@ padding-left: 14px;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
-
 .market-basket-container .btn-order:hover,
 .market-basket-container.btn-order:focus {
   color: #ffffff;
@@ -1634,20 +1703,41 @@ padding-left: 14px;
   box-shadow: inset 0 1px 2px #952718;
 }
 .market-basket td {
-  margin-right: 30px;
+  /*margin-right: 30px;*/
 }
 
-.market-basket tr {
-  margin-bottom: 20px;
+.market-basket tr:last-child {
+  /*margin-bottom: 20px;*/
+
 }
 button.btn-delete {
-  margin-right: 16px;
+  /*margin-right: 16px;*/
+  font-size: 0;
   background-color: #f8f7f4;
+  background-image:url("../img/svg/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 td img {
-  margin-right: 16px;
+  /*margin-right: 16px;*/
 }
+
+.total {
+  text-align: right;
+  font: 15px;
+  line-height: 18px;
+  border-top: 1px solid #cacac7;
+}
+
+.total-cost {
+  font-weight: 700;
+}
+
+.cost {
+  color: #9f9f9f;
+}
+
 .visually-hidden {
 position: absolute;
 width: 1px;

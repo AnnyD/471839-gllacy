@@ -31,9 +31,9 @@
           </ul>
         <ul class="user-navigation">
           <li class="search"><button type="button" aria-label="Кнопка Поиск товара">Поиск</button></li>
-          <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
-          <li class="basket basket-goods">
-            <button class="market-add" type="button" aria-label="Корзина товаров">2 товара</button>
+          <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button>
+          <li class="basket basket-inner">
+            <button class="basket-add" type="button" aria-label="Корзина товаров">2 товара</button>
             <div class="market-basket-container">
             <table class="market-basket">
               <tr>
@@ -42,7 +42,7 @@
                 </td>
               <td><img src="img/png/basket-ice-cream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
               <td>Пломбир с апельсиновым джемом</td>
-              <td>1.5 кг х 200 руб.</td>
+              <td>1.5 кг х <span class="cost">200 руб.</span></td>
               <td>300 руб.</td>
             </tr>
             <tr>
@@ -50,16 +50,21 @@
                 <button class="btn-delete" type="button" aria-label="Кнопка Удалить товар из корзины">X</button>
               </td>
               <td><img src="img/png/basket-ice-cream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1.5 кг х 300 руб.</td>
-              <td>Итого: 450 руб.</td>
+              <td>Клубничный пломбир с присыпкой<br> из белого шоколада</td>
+              <td>1.5 кг х <span class="cost">300 руб.</span></td>
+              <td>450 руб.</td>
               </tr>
               <tr>
-                <td colspan="5">Итого: 750 руб.</td>
+                <td class="total" colspan="5">Итого: <span class="total-cost">750 руб.</span></td>
+              </tr>
+              <tr>
+                <td class="order" colspan="5">
+                  <button class="btn-order" type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
+                </td>
               </tr>
           </table>
-        <button class="btn-order" type="button" aria-label="Кнопка подтверждения заказа">Оформить заказ</button>
       </div>
+        </li>
         </li>
         </ul>
       </nav>

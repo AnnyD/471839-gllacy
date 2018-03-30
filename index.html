@@ -32,9 +32,42 @@
           <li><a href="about-company.html">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"><button type="button" aria-label="Кнопка Поиск">Поиск</button></li>
-          <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button></li>
-          <li class="basket"><button type="button" aria-label="Корзина">Пусто</button></li>
+          <li class="search"><button type="button" aria-label="Кнопка Поиск">Поиск</button>
+            <section class="user-search">
+              <h3 class="visually-hidden">Поле поиска товара</h3>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </form>
+            </section>
+          </li>
+          <li class="login"><button type="button" aria-label="Кнопка Вход">Вход</button>
+            <section class="user-form">
+              <h3 class="visually-hidden
+              ">Введите ваши данные для входа</h3>
+            <form class="user" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label for="user-email" class="visually-hidden">Укажите вашу электронную почту</label>
+                <input id="user-email" type="email" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label for="password" class="visually-hidden">Укажите пароль</label>
+                <input id="password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <div class="user-form-modal">
+              <button class="btn-user-form" type="submit" aria-label="Кнопка Войти">Войти</button>
+              <div class="user-links">
+              <p>
+                <a href="https://echo.htmlacademy.ru">Забыли пароль?</a>
+              </p>
+              <p>
+                <a href="https://echo.htmlacademy.ru">Новая регистрация</a>
+              </p>
+            </div>
+            </div>
+            </form>
+          </section>
+        </li>
+          <li class="basket"><button  class="basket-empty" type="button" aria-label="Корзина">Пусто</button></li>
         </ul>
       </nav>
       <div class="working-hours">
@@ -204,36 +237,6 @@
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 	&copy; 2017</p>
     </div>
     </footer>
-    <section class="user-search">
-      <h3 class="visually-hidden">Поле поиска товара</h3>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="text" name="search" placeholder="Что ищем?">
-      </form>
-    </section>
-    <section class="user-form">
-      <h3 class="visually-hidden">Введите ваши данные для входа</h3>
-    <form class="user" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="user-email" class="visually-hidden">Укажите вашу электронную почту</label>
-        <input id="user-email" type="email" name="email" placeholder="Электронная почта">
-      </p>
-      <p>
-        <label for="password" class="visually-hidden">Укажите пароль</label>
-        <input id="password" type="password" name="password" placeholder="Пароль">
-      </p>
-      <div class="user-form-modal">
-      <button class="btn-user-form" type="submit" aria-label="Кнопка Войти">Войти</button>
-      <div class="user-links">
-      <p>
-        <a href="https://echo.htmlacademy.ru">Забыли пароль?</a>
-      </p>
-      <p>
-        <a href="https://echo.htmlacademy.ru">Новая регистрация</a>
-      </p>
-    </div>
-    </div>
-    </form>
-  </section>
   <section class="feedback">
     <h3 class="visually-hidden">Заполнение формы обратной связи</h3>
     <p>Мы обязательно вам ответим!</p>
