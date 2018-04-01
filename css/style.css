@@ -692,7 +692,7 @@ select[name="sort"] {
 .filter input[type="checkbox"]:disabled+label::after {
   border-color: rgba(255, 255, 255, 0.4);
 }
-*/
+
 
 /* END FILTER */
 
@@ -1539,7 +1539,8 @@ opacity: 1;
 .footer-info a   {
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 400;    padding-left: 23px;
+  padding-left: 23px;
 }
 
 .footer-copyright p {
