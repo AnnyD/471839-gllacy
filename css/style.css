@@ -692,8 +692,6 @@ select[name="sort"] {
 .filter input[type="checkbox"]:disabled+label::after {
   border-color: rgba(255, 255, 255, 0.4);
 }
-
-
 /* END FILTER */
 
 /* END HEADER */
@@ -716,7 +714,7 @@ select[name="sort"] {
 /* START SLIDER */
 
 .site-wrapper {
-  width: 100%
+  width: 100%;
   background-color: #849d8f;
   background-image: url("../img/png/slide-1.png");
   background-repeat: no-repeat;
@@ -916,7 +914,7 @@ h3.free  {
 /* START CATALOG */
 
 .container {
-  width: 1146;
+  width: 1146px;
   margin-right: 27px;
   margin-left: 27px;
 }
@@ -973,7 +971,7 @@ h3.free  {
 }
 .catalog-footer {
   opacity: 0;
-  width: 100%
+  width: 100%;
   text-align: center;
 }
 
@@ -1690,7 +1688,7 @@ opacity: 1;
   height: 84px;
   border-radius: 5px;
   font-size: 14px;
-  line-height: 24px;\
+  line-height: 24px;
   color: #999999;
   margin: 0;
 
@@ -1707,7 +1705,7 @@ opacity: 1;
   width: 295px;
   height: 42px;
   padding-left: 14px;
-  margin-left: 15px;
+  margin-left: 14px;
   margin-top: 20px;
 }
 
