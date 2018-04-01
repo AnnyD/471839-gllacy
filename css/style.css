@@ -72,8 +72,8 @@ button {
   font-weight: 500;
   color: #ffffff;
   height: 32px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 13px;
+  padding-right: 13px;
   text-align: center;
   border-radius: 16px;
   text-shadow: 0px 0px 0px #b2cabd;
@@ -86,14 +86,16 @@ button {
 }
 
 .site-navigation > li {
-  margin-left: 16px;
+  margin-left: 12px;
 }
-
+.site-navigation li{
+  margin-right: -10px;
+}
 .site-navigation a:not(.sub)::before {
   display: block;
   position: absolute;
   content: "";
-  bottom: 4px;
+  bottom: 7px;
   left: 10px;
   right: 3px;
   height: 1px;
@@ -232,7 +234,7 @@ cursor: pointer;
   transition: all .3s ease .15s;
 }
 
-.login button {
+.login .bnt-login {
   position: relative;
   padding-left: 43px;
   padding-right: 17px;
@@ -243,7 +245,7 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.login button::before {
+.login .bnt-login::before {
   position: absolute;
   content: "";
   top: 6px;
@@ -254,8 +256,8 @@ cursor: pointer;
   background-repeat: no-repeat;
 }
 
-.login button:hover::before,
-.login button:focus::before {
+.login .bnt-login:hover::before,
+.login .bnt-login:focus::before {
   background-image: url("../img/svg/entrance-active.svg");
 }
 
@@ -274,10 +276,12 @@ cursor: pointer;
   width: 117px;
   border-radius: 16px;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 31px;
   cursor: pointer;
 }
-
+.basket-empty {
+  padding-left: 16px;
+}
 .basket-empty::before {
   position: absolute;
   content: "";
@@ -316,6 +320,10 @@ cursor: pointer;
   background-repeat: no-repeat;
 }
 
+.user-navigation .basket-add  {
+  background-color: #f7f6f3;
+  color: #323232;
+}
 /* часы работы и телефон*/
 
 .working-hours {
@@ -395,7 +403,7 @@ cursor: pointer;
   display: flex;
   width: 1146px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 /*фильтр сортировки*/
@@ -404,6 +412,8 @@ cursor: pointer;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  margin-top: 3px;
+  margin-bottom: 27px;
 }
 .filter legend {
   font-size: 14px;
@@ -430,9 +440,9 @@ margin-bottom: 5px;
   width: 193px;
   height: 36px;
   vertical-align: middle;
-  padding-top: 5px;
+  padding-top: 6px;
   padding-bottom: 5px;
-  padding-left: 16px;
+  padding-left: 10px;
   margin-bottom: 15px;
   border-radius: 20px;
   font-size: 16px;
@@ -464,7 +474,7 @@ margin-bottom: 5px;
 }
 
 .filter-price legend {
-  margin-left: 15px;
+  margin-left: 28px;
   margin-bottom: 5px;
 }
 
@@ -477,12 +487,12 @@ margin-bottom: 5px;
   padding-left: 21px;
   padding-right: 21px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 9px;
-  left: 20px;
+  top: 7px;
   width: 5px;
   height: 5px;
   padding: 0;
@@ -493,11 +503,11 @@ margin-bottom: 5px;
 }
 
 .range-controls .toggle-min {
-  left: 30px;
+  left: 37px;
 }
 
 .range-controls .toggle-max {
-  left: 150px;
+  left: 136px;
 }
 
 .range-controls .scale {
@@ -540,8 +550,11 @@ select[name="sort"] {
   width: 415px;
   height: 36px;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 10px;
+  padding-top: 3px;
+  margin-left: 12px;
+  margin-top: -4px;
   font-weight: 400;
   background: rgba(248, 247, 244, 0.2);
   border-radius: 25px;
@@ -556,6 +569,7 @@ select[name="sort"] {
   margin-bottom: 8px;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 28px;
 }
 
 .fatness-filter p {
@@ -571,7 +585,7 @@ select[name="sort"] {
   position: absolute;
   content: "";
   top: -5px;
-  left: -30px;
+  left: -36px;
   width: 15px;
   height: 15px;
   border: 4px solid #ffffff;
@@ -587,7 +601,7 @@ select[name="sort"] {
   position: absolute;
   content: "";
   top:2px;
-  left: -23px;
+  left: -29px;
 
   width: 9px;
   height: 9px;
@@ -607,9 +621,13 @@ select[name="sort"] {
 
 /* фильтр наполнителей*/
 
+
 .top {
   width: 702px;
   margin-top: 7px;
+  margin-left: 0;
+  padding: 0;
+  padding-right: 17px;
 }
 
 .filter input[type="checkbox"],
@@ -620,12 +638,23 @@ select[name="sort"] {
 .top p {
   padding-left: 35px;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-left: 30px;
 }
 
 .toppings-filter label {
   position: relative;
   padding-left: 10px;
   text-transform:  lowercase;
+}
+
+.toppings-filter legend {
+  padding-left: 16px;
+  padding-top: 2px;
 }
 
 .toppings-filter label::before {
@@ -663,6 +692,8 @@ select[name="sort"] {
 .filter input[type="checkbox"]:disabled+label::after {
   border-color: rgba(255, 255, 255, 0.4);
 }
+*/
+
 /* END FILTER */
 
 /* END HEADER */
@@ -673,12 +704,12 @@ select[name="sort"] {
 }
 
 .filter-form .btn-filter {
-  width: 140px;
-  height: 32px;
+  width: 142px;
+  height: 34px;
   border-radius: 25px;
   margin-right: auto;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin-left: 15px;
+  margin-top: 24px;
   border: 2px solid #fcfcfc;
   cursor: pointer;
 }
@@ -867,7 +898,7 @@ h3.free  {
 }
 .for-free-chocolate .btn-free {
   padding-left: 8px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   width: 189px;
 }
 .btn-free:hover,
@@ -907,7 +938,6 @@ h3.free  {
   margin-bottom: 40px;
   text-align: center;
   margin-top: -80px;
-  btn-filter
 }
 
 .catalog-item img {
@@ -1032,9 +1062,11 @@ h3.free  {
   /* START PAGINATION */
 
   .pagination {
-    display: flex;
-    width: 190px;
-    margin-left: auto;
+  display: flex;
+  width: 190px;
+  margin-left: auto;
+  margin-bottom: 35px;
+  margin-top: -58px;
   }
 
 .pagination ul,
@@ -1042,6 +1074,7 @@ h3.free  {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .pagination li {
@@ -1084,6 +1117,10 @@ h3.free  {
   border-radius: 50%;
   text-align: center;
   }
+
+  .page-left {
+    opacity: 0.4;
+  }
   /* END PAGINATION */
 
 /* END CATALOG */
@@ -1123,7 +1160,7 @@ h3.free  {
 
 .about-us-container-2 {
   margin-right: 25px;
-  padding-left: 57px;
+  padding-left: 58px;
   margin-left: 14px;
 }
 
@@ -1150,7 +1187,7 @@ h3.free  {
 .about-us-container-2 p:first-child::before {
   position:  absolute;
   content: "";
-  top: -2px;
+  top: -13px;
   left: 0;
   width: 49px;
   height: 49px;
@@ -1161,7 +1198,7 @@ h3.free  {
   position:  absolute;
   content: "";
   top: 75px;
-  left: -2px;
+  left: 1px;
   width: 49px;
   height: 49px;
   background-image: url("../img/svg/therm.svg");
@@ -1210,7 +1247,7 @@ h3.free  {
   line-height: 22px;
   font-weight: 400;
   color: #323232;
-  padding-top: 24px;
+  padding-top: 7px;
   padding-left: 20px;
 }
 .blog a {
@@ -1221,6 +1258,7 @@ h3.free  {
   color:#323232;
   text-decoration: underline;
   padding-left: 20px;
+  margin-top: -11px;
 }
 
 .blog a:hover,
@@ -1262,10 +1300,10 @@ h3.free  {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
-  padding-top: 35px;
-  padding-left: 16px;
-  padding-right: 28px;
-  margin-bottom: 36px;
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-right: 20px;
+  margin-bottom: 35px;
 }
 .subscribe button {
   font-size: 18px;
@@ -1273,7 +1311,7 @@ h3.free  {
   font-weight: 700;
   text-align: center;
   width: 129px;
-  height: 46px;
+  height: 44px;
   color: #ffffff;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -1296,13 +1334,14 @@ h3.free  {
   line-height: 24px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  height: 44px;
+  height: 41px;
   padding-left: 14px;
-  width: 367px;
+  width: 353px;
+  margin-right: 6px;
 }
 
 .subscribe form {
-    padding-left: 26px;
+    margin-left: 26px;
 }
 
 /* END SUBSCRIBE */
@@ -1337,15 +1376,19 @@ h3.free  {
   background-color: #fefefe;
 }
 .address-container {
-  padding-left: 25px;
-  padding-right: 57px;
-  padding-top: 15px;
-  margin-bottom: 27px;
+  padding: 0;
+  margin-top: 29px;
+  margin-left: 25px;
 }
 
 .address-container p:first-child {
-  padding-left: 25px;
+  margin-bottom: 18px;
 }
+
+.address-container p:nth-child(2) {
+  margin-bottom: 23px;
+}
+
 .address span {
   font-size: 18px;
   line-height: 24px;
@@ -1361,7 +1404,7 @@ h3.free  {
   margin-right: 26px;
   margin-bottom: 27px;
   width: 252px;
-  height: 46px;
+  height: 44px;
   border-radius: 30px;
   color: #ffffff;
   background-image: linear-gradient(to top, #e74a35, #f26843);
@@ -1384,7 +1427,7 @@ h3.free  {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-right: 27px;
+  margin-right: 28px;
   margin-left: 27px;
   /*background-color: gray; /*временно*/
 }
@@ -1402,8 +1445,10 @@ h3.free  {
 /* кнопки социальных сетей */
 
 .footer-social {
-  margin-top: 36px;
+  margin-top: 29px;
   margin-bottom: 29px;
+  /*margin-right: 132px;*/
+  margin-right: 0;
 }
 .footer-social ul {
   display: flex;
@@ -1416,7 +1461,7 @@ h3.free  {
   margin: 0;
 }
 .footer-social li {
-  margin-right: 20px;
+  margin-right: 11px;
 }
 
   .social-button {
@@ -1441,6 +1486,10 @@ opacity: 1;
 
 /* информационный раздел */
 
+.footer-info {
+  margin-top: 29px;
+}
+
 .footer-info ul,
 .footer-info li {
   margin: 0;
@@ -1452,7 +1501,8 @@ opacity: 1;
   display: flex;
   flex-wrap: wrap;
   margin-left: 250px;
-  width: 332px;
+  width: 400px;
+  margin-top: 25px;
   align-items: center;
   align-content: center;
   /*background-color: pink; /*временно*/
@@ -1461,8 +1511,14 @@ opacity: 1;
 .info {
   position: relative;
   margin-right: 32px;
-  padding-left: 22px;
+  padding-left: 23px;
+  margin-top: -5px;
 }
+
+.doc {
+  margin-top: -5px;
+}
+
 
 .main-footer.inner {
   border-top: 1px solid #a9bbb1;
@@ -1471,8 +1527,8 @@ opacity: 1;
 .info::before {
   position: absolute;
   content: "";
-  top: 3px;
-  left: 0;
+  top: 4px;
+  left: 1px;
   width: 15px;
   height: 15px;
   background-image: url("../img/svg/heart.svg");
@@ -1487,16 +1543,22 @@ opacity: 1;
 }
 
 .footer-copyright p {
-  font-size: 13px;
+  /*font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 400;*/
+  margin: 0;
 }
 
 .footer-copyright {
-  width: 267px;
+  /*width: 267px;
   padding-top: 19px;
   padding-left: 80px;
   /*background-color: green; /*временно*/
+  float: right;
+    margin-top: 13px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
   }
 
 .footer-copyright a{
@@ -1682,7 +1744,7 @@ opacity: 1;
 .user-form  input[type="password"] {
   font-size: 14px;
   line-height: 16px;
-  color: #b4b4b4;
+  color: #000000;
   border: 1px solid #b4b4b4;
   border-radius: 5px;
   height: 42px;
@@ -1699,7 +1761,7 @@ opacity: 1;
   text-align: center;
   color: #ffffff;
   width: 100px;
-  height: 46px;
+  height: 44px;
   border-radius: 20px;
   margin-left: 20px;
   background-image: linear-gradient(to top, #e74a35, #f26843);
