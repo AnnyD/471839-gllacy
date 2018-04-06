@@ -200,9 +200,9 @@ a.catalog-list-novelty::before {
 /* иконки у входа. поиска и корзины*/
 
 .user-navigation button {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   color: inherit;
   text-align: center;
 }
@@ -1274,7 +1274,7 @@ h3.free {
 .blog h3 {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 500;
   color: #323232;
   padding-top: 7px;
   padding-left: 20px;
@@ -1334,6 +1334,7 @@ h3.free {
 .subscribe p {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #5a5a5a;
   padding-top: 18px;
   padding-left: 27px;
@@ -1407,7 +1408,8 @@ h3.free {
   min-height: 305px;
   border-radius: 10px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
+  font-weight: 400;
   color: #323232;
   background-color: #fefefe;
 }
@@ -1426,7 +1428,7 @@ h3.free {
   margin-bottom: 23px;
 }
 
-.address span {
+.address-container span:first-of-type {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1732,11 +1734,8 @@ h3.free {
 .user-search input[type="text"] {
   font-size: 14px;
   line-height: 24px;
-  border: 1px solid #d3d3d2;
-  border-radius: 2px;
   width: 295px;
   height: 42px;
-  padding-left: 14px;
   margin-left: 14px;
   margin-top: 20px;
 }
@@ -1907,4 +1906,41 @@ button.btn-delete {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* стилизация полей форм и плейсхолдеров */
+
+.input-field,
+.textarea-field {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #b2b2b2;
+  opacity: 0.7;
+  box-sizing: border-box;
+}
+
+.input-field:hover,
+.textarea-field:hover {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  font-weight: 400;
+}
+
+.user-email:focus::placeholder,
+.user-search:focus::placeholder,
+.user-form:focus::placeholder,
+.feedback-form:focus::placeholder {
+  color: transparent;
 }

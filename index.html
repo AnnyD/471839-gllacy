@@ -46,7 +46,7 @@
                 <section class="user-search">
                   <h3 class="visually-hidden">Поле поиска товара</h3>
                   <form action="https://echo.htmlacademy.ru" method="get">
-                    <input type="text" name="search" placeholder="Что ищем?">
+                    <input class="input-field" type="text" name="search" placeholder="Что ищем?">
                   </form>
                 </section>
               </li>
@@ -58,11 +58,11 @@
                   <form class="user" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label for="user-email" class="visually-hidden">Укажите вашу электронную почту</label>
-                      <input id="user-email" type="email" name="email" placeholder="Электронная почта">
+                      <input id="user-email" class="input-field" type="email" name="email" placeholder="Электронная почта">
                     </p>
                     <p>
                       <label for="password" class="visually-hidden">Укажите пароль</label>
-                      <input id="password" type="password" name="password" placeholder="Пароль">
+                      <input id="password" class="input-field" type="password" name="password" placeholder="Пароль">
                     </p>
                     <div class="user-form-modal">
                       <button class="btn-user-form" type="submit" aria-label="Кнопка Войти">Войти</button>
@@ -198,7 +198,7 @@
               <h2 class="visually-hidden">Подписка на рассылку</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="email" placeholder="Электронная почта">
+                <input class="input-field" type="email" name="email" placeholder="Электронная почта">
                 <button class="btn-sign-on">Отправить</button>
               </form>
             </section>
@@ -289,14 +289,14 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="user-name">Ваше имя?</label>
-              <input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+              <input id="user-name" class="input-field" type="text" name="name" placeholder="Как вас зовут?">
             </p>
             <p>
               <label class="visually-hidden" for="user-email-fedback">Ваша электронная почта?</label>
-              <input id="user-email-fedback" type="email" name="email" placeholder="Ваша почта для ответа?">
+              <input id="user-email-fedback" class="input-field" type="email" name="email" placeholder="Ваша почта для ответа?">
             </p>
             <p>
-              <textarea name="text" placeholder="Напишите что-нибудь"></textarea>
+              <textarea class="textarea-field" name="text" placeholder="Напишите что-нибудь"></textarea>
             </p>
             <button class="btn-submit" type="submit" aria-label="Кнопка Отправить">Отправить</button>
           </form>
