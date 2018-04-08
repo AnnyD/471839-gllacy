@@ -326,7 +326,7 @@ button {
 .market-basket-container {
   opacity: 0;
   visibility: hidden;
-  ВОССТАНОВИТЬ ! transition: all .3s ease .15s;
+  transition: all .3s ease .15s;
 }
 
 .basket-inner:hover .market-basket-container {
@@ -1096,7 +1096,7 @@ h3.free {
 
 .inner-container,
 .catalog-ice-cream {
-  catalog-ice-cream width: 1146px;
+  width: 1146px;
   margin-left: 27px;
   margin-right: 27px;
 }
